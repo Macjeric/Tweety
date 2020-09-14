@@ -14,16 +14,34 @@
     <div>
         <h5 class="font-bold mb-2">
             <a href="{{ $tweet->user->path() }}">
-                {{ $tweet->user->name }}
+                {{ $tweet->user->name }} 
             </a>
-        </h5>
+        </h5>     
+
 
         <p class="text-sm mb-3">
-            {{ $tweet->body }}
+            <a class="hover:bg-blue-200" href="/tweets/{{$tweet->id}}">
+                {{ $tweet->body }}
+            </a>
         </p>
 
-        @auth
-            <x-like-buttons :tweet="$tweet" />
-        @endauth
+        <div class="flex items-center">
+            <p class="text-sm text-green-500"> {{ $tweet->created_at->toDayDateTimeString() }}</p>  
+            
+            <p class="text-sm text-blue-500 ml-2"> - 
+                <a href="/tweets/{{$tweet->id}}"> {{ $tweet->replies->count() }} comment(s).</a>
+            </p>
+
+                <form method="POST" action="/tweets/{{$tweet->id}}" class="ml-5">
+                @method('DELETE')
+                @csrf
+                <button type="submit" class="text-xs text-red-700">Delete</button>
+            </form>
+
+        </div>
+        
+
+
     </div>
 </div>
+

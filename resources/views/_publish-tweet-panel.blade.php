@@ -1,14 +1,17 @@
 <div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
-    <form method="POST" action="/tweets">
+    <form method="POST" action="/tweets" enctype="multipart/form-data">
         @csrf
 
         <textarea
             name="body"
             class="w-full"
-            placeholder="What's up doc?"
+            placeholder="Any chances for my students?"
+            rows=10
             required
             autofocus
         ></textarea>
+
+        <input type="file" name="document" class="text-sm" required>
 
         <hr class="my-4">
 

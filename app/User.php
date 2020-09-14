@@ -69,4 +69,21 @@ class User extends Authenticatable
 
         return $append ? "{$path}/{$append}" : $path;
     }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+    public function assignRole($role)
+    {
+        // Assign a role to a user
+        $this->roles()->sync($role, false);
+    }
+
+    public function abilities()
+    {
+        return $this->roles->map->abilities->flatten()->pluck('name')->unique();
+    }
+
 }

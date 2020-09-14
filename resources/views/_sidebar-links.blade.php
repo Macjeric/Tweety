@@ -8,6 +8,7 @@
         </a>
     </li>
 
+@can('super_admin')
     <li>
         <a
             class="font-bold text-lg mb-4 block"
@@ -16,6 +17,7 @@
             Explore
         </a>
     </li>
+@endcan
 
     @auth
         <li>

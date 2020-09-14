@@ -23,12 +23,9 @@
     <div id="app">
         <section class="px-8 py-4 mb-6">
             <header class="container mx-auto">
-                <h1>
+                <h1 class="font-bold text-teal-800">
                     <a href="/tweets">
-                        <img
-                            src="/images/logo.svg"
-                            alt="Tweety"
-                        >
+                        STUDENT FIELD REQUEST SYSTEM
                     </a>
                 </h1>
             </header>

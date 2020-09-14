@@ -1,4 +1,4 @@
-<x-master>
+<x-master><a class="pl-12 font-bold text-green-700" href="/">BACK HOME</a>
     <div class="container mx-auto flex justify-center">
         <x-panel>
             <x-slot name="heading">Register</x-slot>

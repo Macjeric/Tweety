@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 
 class ProfilesController extends Controller
@@ -54,6 +56,8 @@ class ProfilesController extends Controller
         if (request('avatar')) {
             $attributes['avatar'] = request('avatar')->store('avatars');
         }
+
+   
 
         $user->update($attributes);
 

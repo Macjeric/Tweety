@@ -1,5 +1,6 @@
+@can('super_admin')
 <div class="bg-gray-200 border border-gray-300 rounded-lg py-4 px-6">
-    <h3 class="font-bold text-xl mb-4">Following</h3>
+    <h3 class="font-bold text-xl mb-4">Connections</h3>
 
     <ul>
         @forelse (current_user()->follows as $user)
@@ -23,3 +24,16 @@
         @endforelse
     </ul>
 </div>
+@endcan
+
+<!-- Universty Users view -->
+@can('uni_users')
+<div class="bg-gray-200 border border-gray-300 rounded-lg py-4 px-6">
+    <h3 class="font-bold text-xl mb-4">How To</h3>
+    
+        <a href="/" class="flex items-center text-sm">
+              Using Instruction          
+        </a>
+                
+</div>
+@endcan
