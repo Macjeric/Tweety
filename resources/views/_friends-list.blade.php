@@ -31,8 +31,16 @@
 <div class="bg-gray-200 border border-gray-300 rounded-lg py-4 px-6">
     <h3 class="font-bold text-xl mb-4">How To</h3>
     
-        <a href="/" class="flex items-center text-sm">
+        <a href="/" class="text-green-500 hover:bg-green-700 flex items-center text-sm mb-2">
               Using Instruction          
+        </a>
+
+        <a href="/" class="text-green-500 hover:bg-green-700 flex items-center text-sm mb-2">
+              Check the Requirements needed          
+        </a>
+
+        <a href="/" class="text-green-500 hover:bg-green-700 flex items-center text-sm mb-2">
+              Contact the Department          
         </a>
                 
 </div>

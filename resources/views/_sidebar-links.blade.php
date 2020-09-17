@@ -29,6 +29,17 @@
             </a>
         </li>
 
+@can('super_admin')
+<li>
+        <a
+            class="font-bold text-lg mb-4 block"
+            href="{{ current_user()->path() }}/requirements/show"
+        >
+            Requirements
+        </a>
+    </li>
+@endcan
+
         <li>
             <form method="POST" action="/logout">
                 @csrf

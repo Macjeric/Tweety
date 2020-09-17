@@ -25,6 +25,11 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/tweets/{tweet}/replies', 'RepliesController');
 
+    Route::get('/requirements', 'RequirementsController@index');
+    Route::get('/requirements/edit', 'RequirementsController@edit');
+    Route::get('/requirements/show', 'RequirementsController@show');
+
+
 
 
 

@@ -48,9 +48,16 @@ class TweetsController extends Controller
         return back()->with('success', 'Post Removed');
     }
 
-    public function getDocAttribute($value)
+    public function update(Tweet $tweet)
     {
-        return asset($value);
+        $attributes = request()->validate([
+        'body' => 'required|max:880',
+
+    ]);
+
+        $tweet->update($attributes);
+
     }
+
 
 }

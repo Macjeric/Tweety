@@ -86,4 +86,9 @@ class User extends Authenticatable
         return $this->roles->map->abilities->flatten()->pluck('name')->unique();
     }
 
+    public function requirements()
+    {
+        return $this->hasMany(Requirement::class);
+    }
+
 }

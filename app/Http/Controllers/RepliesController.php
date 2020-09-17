@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Replies;
 use App\Tweet;
+use App\Replies;
 use Illuminate\Http\Request;
 
 class RepliesController extends Controller
