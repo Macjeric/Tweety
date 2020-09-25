@@ -8,79 +8,51 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+            @font-face {
+                    font-family: "Camphor W01 Regular";
+                    src: url(/fonts/Camphor-W01-Regular.ttf) format("truetype");
+                }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+        <body>
+            <div class="mt-5 lg:ml-20 ml-5 ">
+                <div class="md:flex items-center justify-between">
+                    <div class="md:flex content-center items-center " style="max-width: 650px">
+                        <a href="/" class="lg:ml-10"><span class="block">SFR</a>
+
+                        <a href="/" class="" style="margin-left: 17rem;"><span class="block">For It</span></a>
+                        <a href="/" class="ml-20 "><span class="block">For It 2</span></a>
+                        <a href="/" class="ml-20"><span class="block">For It 3</span></a>
+                        <!-- <a href="/" class="ml-20 lg:invisible sm:visible"><span class="block">SignIn</span></a> -->
 
 
-            <div class="content">
-                <div class="title m-b-md">
-                    SFR
+                    </div>
+
+                    <div class="">
+                        <button class="bg-transparent hover:bg-blue-500 text-blue-700  hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full mr-12">
+                            SignIn
+                        </button>   
+
+                    </div>
+
                 </div>
 
-                <div class="links">
-                    @auth
-                        <a href="{{ url('/tweets') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
             </div>
-        </div>
-    </body>
+
+        <div class="">
+            <div>
+                <h1 class="font-bold text-5xl" style="margin-top:10rem; margin-left: 7.3rem;">Let's make It Practical</h1>
+            </div>
+
+            <div style="margin-top:2rem; margin-left: 50rem;">
+                <img src="/images/lib.png" width="400" height="500">
+            </div>
+
+
+        </body>
+    
 </html>

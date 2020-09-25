@@ -33,7 +33,7 @@
 <li>
         <a
             class="font-bold text-lg mb-4 block"
-            href="{{ current_user()->path() }}/requirements/show"
+            href="/requirements/show"
         >
             Requirements
         </a>

@@ -18,9 +18,8 @@ class RequirementsController extends Controller
     	// $requirements = Requirement::All();
 
     	return view('requirements.index', [
-            'requirements' => auth()
+            'requireUser' => auth()
                 ->user()
-                ->timeline(),
         ]);
     }
 
