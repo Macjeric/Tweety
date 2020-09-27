@@ -1,0 +1,20 @@
+/*For large Screens*/
+@media only screen and (max-width:1040px){
+	.img-lg{
+		display: none;
+	}
+	
+	.sev-three{
+		margin-left: 7.3rem;
+		margin-top:10rem;
+	}
+}
+
+/*For small Screens*/
+@media only screen and (max-width:640px){
+	.nav-line{
+		display: inline-block;
+		
+	}
+
+}
